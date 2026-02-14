@@ -51,13 +51,15 @@ export function ContactSection() {
 
     if (Object.keys(newErrors).length === 0) {
   fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({
-      "form-name": "contact",
-      ...formData,
-    }).toString(),
-  })
+  method: "POST",
+  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  body: new URLSearchParams({
+    "form-name": "contact",
+    name: formData.name,
+    email: formData.email,
+    message: formData.message,
+  }).toString(),
+})
     .then(() => {
       setSubmitted(true)
       setFormData({ name: "", email: "", message: "" })
