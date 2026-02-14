@@ -50,7 +50,7 @@ export function ContactSection() {
     setErrors(newErrors)
 
     if (Object.keys(newErrors).length === 0) {
-  fetch("/", {
+  fetch("/?no-cache=1", {
   method: "POST",
   headers: { "Content-Type": "application/x-www-form-urlencoded" },
   body: new URLSearchParams({
@@ -129,15 +129,16 @@ export function ContactSection() {
             </div>
           </div>
 
-          <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit={handleSubmit}
-              className="space-y-4"
-              noValidate
-            >
+         <form
+  name="contact"
+  method="POST"
+  action="/"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  onSubmit={handleSubmit}
+  className="space-y-4"
+  noValidate
+>
               <input type="hidden" name="form-name" value="contact" />
             <p hidden>
               <label>
