@@ -111,6 +111,10 @@ export function HeroSection() {
               <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
             </a>
           </div>
+
+          <div style={getAnimStyle("0.85s")} className="mt-12">
+            <div className="h-px w-24 bg-gradient-to-r from-primary/40 via-primary/60 to-primary/40" />
+          </div>
         </div>
 
         {/* Profile image */}
