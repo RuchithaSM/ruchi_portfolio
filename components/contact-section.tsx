@@ -50,7 +50,7 @@ export function ContactSection() {
     setErrors(newErrors)
 
     if (Object.keys(newErrors).length === 0) {
-  fetch("/?no-cache=1", {
+  fetch("/__forms.html", {
   method: "POST",
   headers: { "Content-Type": "application/x-www-form-urlencoded" },
   body: new URLSearchParams({
