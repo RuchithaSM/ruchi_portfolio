@@ -130,7 +130,7 @@ export function HeroSection() {
         >
           <div className="relative">
             <div className="absolute -inset-3 rounded-full bg-primary/10 blur-xl" />
-            <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-border shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80" style={{ WebkitTransform: "translateZ(0)", WebkitBackfaceVisibility: "hidden" }}>
+            <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-border shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80">
               <Image
                 src="/images/profile.jpg"
                 alt="Ruchitha Shivappashetty Mallikarjun"
@@ -138,7 +138,6 @@ export function HeroSection() {
                 className="object-cover"
                 priority
                 sizes="(max-width: 768px) 224px, (max-width: 1024px) 288px, 320px"
-                style={{ WebkitTransform: "translateZ(0)", WebkitBackfaceVisibility: "hidden" }}
               />
             </div>
           </div>
