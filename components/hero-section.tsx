@@ -126,12 +126,12 @@ export function HeroSection() {
         >
           <div className="relative">
             <div className="absolute -inset-3 rounded-full bg-primary/10 blur-xl" />
-            <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-border shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80">
+            <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-border shadow-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80 !rotate-0 !transform-none">
               <Image
                 src="/images/profile.jpg"
                 alt="Ruchitha Shivappashetty Mallikarjun"
                 fill
-                className="object-cover"
+                className="object-cover !rotate-0 !transform-none !animate-none"
                 priority
               />
             </div>
