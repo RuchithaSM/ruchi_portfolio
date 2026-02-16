@@ -15,17 +15,24 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Ruchitha S M | QA Automation Engineer & Web Developer',
-  description:
-    'Personal portfolio of Ruchitha Shivappashetty Mallikarjun — QA Automation Engineer, SDET, and aspiring Web Developer. Explore my work, projects, and technical blog.',
-  keywords: [
-    'QA Automation',
-    'SDET',
-    'Selenium',
-    'Python',
-    'Web Developer',
-    'Portfolio',
-  ],
+  title: "Ruchitha | QA Automation Engineer",
+  description: "QA Automation Engineer & SDET Portfolio",
+
+  openGraph: {
+    title: "Ruchitha | QA Engineer",
+    description: "QA Automation Engineer Portfolio",
+    url: "https://your-netlify-url.netlify.app",
+    siteName: "Ruchitha Portfolio",
+    images: [
+      {
+        url: "/thumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
 }
 
 export const viewport = {
